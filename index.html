@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="box mx-auto my-5">
+                <form action="" id="form">
+                    <fieldset>
+                       
+                        <legend> Please lorem lorem Lorem ipsum dolor, sit amet consectetur adipisicing</legend>
+                        <p>
+                        <label for="">Name requered at least 2 char</label>
+                        <input type="text" name="text" minlength="2" id="txt" required>
+                    </p>
+                    <p>
+                        <label for="">E-mail</label>
+                        <input type="email" name="email" id="ml" required>
+                    </p>
+                    <p>
+                        <label for="">URL (optional)</label>
+                        <input type="link" name="link" id="lnk">
+                    </p>
+                    <p>
+                        <label for="">Your comment</label>
+                        <textarea name="" id="cmnt" cols="30" rows="2" required></textarea>
+                    </p>
+                        <button type="submit">Submit</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"
+        integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>  
+        $(function () {
+            $("#form").validate()
+        })
+    </script>
+</body>
+
+</html>
